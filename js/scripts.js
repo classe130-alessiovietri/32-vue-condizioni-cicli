@@ -5,7 +5,13 @@ const app = createApp({
         return {
             message: 'SPENTO',
             on: false,
-            msgClasses: 'off-msg'
+            msgClasses: 'off-msg',
+            groceryList: [
+                'Acqua',
+                'Latte',
+                'Uova',
+                'Verdure',
+            ]
         };
     },
     methods: {
@@ -44,4 +50,10 @@ const app = createApp({
 //     }
     
 //     on = !on;
+// });
+
+// arr.forEach((item) => {
+// arr.forEach((item, index) => {
+// arr.forEach((item, index, fullArr) => {
+
 // });

@@ -80,6 +80,21 @@
                         E' USCITO 1 COL v-show
                     </div>
                 </div>
+
+                <div class="container">
+                    <ul>
+                        <!-- <li v-for="product in groceryList">
+                            <div>
+                                {{ product }}
+                            </div>
+                        </li> -->
+                        <li v-for="(product, gino) in groceryList">
+                            <div>
+                                {{ gino + 1 }} - {{ product }}
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </main>
             <!-- /main -->
 
