@@ -18,3 +18,20 @@ html {
     max-width: 1000px;
     margin: 0 auto;
 }
+
+.msg {
+    font-weight: bold;
+    font-size: 3rem;
+    padding: 5px 10px;
+    border-radius: 12px;
+}
+
+.on-msg {
+    background-color: lightgreen;
+    color: green;
+}
+
+.off-msg {
+    background-color: rgba(255, 0, 0, 0.25);
+    color: red;
+}

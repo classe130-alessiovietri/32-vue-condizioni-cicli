@@ -3,40 +3,85 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Template HTML CSS Vue</title>
+        <title>32 Vue Condizioni Cicli</title>
 
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
 
-        <div id="app">
+        <!-- <div>
+            <div>
+                <button>
+                    Cliccami
+                </button>
+            </div>
 
-            <!-- header -->
-            <header>
-                <div class="container">
-                    HEADER
-                </div>
-            </header>
-            <!-- /header -->
+            <div>
+                <p>SPENTO</p>
+            </div>
+        </div> -->
+
+        <div id="app">
 
             <!-- main -->
             <main>
                 <div class="container">
-                    <h1>
+                    <div>
+                        <button @click="handleClick()">
+                            Cliccami
+                        </button>
+                    </div>
+
+                    <!-- <div class="msg" :class="msgClasses">
                         {{ message }}
-                    </h1>
+                    </div> -->
+
+                    <div v-if="on == false" class="msg off-msg">
+                        <p>
+                            Non si vede niente, perché l'interruttore è
+                        </p>
+
+                        <div>
+                            SPENTO
+                        </div>
+                    </div>
+                    <div v-else class="msg on-msg">
+                        <div>
+                            ACCESO
+                        </div>
+
+                        <p>
+                            quindi ora si vede
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div v-if="randomNumber(1, 10) > 5">
+                        TRA 6 E 10
+                    </div>
+                    <div v-else>
+                        TRA 1 E 5
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div v-if="randomNumber(0, 1)">
+                        SI
+                    </div>
+                    <div v-else>
+                        NO
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div v-show="randomNumber(0, 1)">
+                        E' USCITO 1 COL v-show
+                    </div>
                 </div>
             </main>
             <!-- /main -->
-
-            <!-- footer -->
-            <footer>
-                <div class="container">
-                    FOOTER
-                </div>
-            </footer>
-            <!-- /footer -->
 
         </div>
 
